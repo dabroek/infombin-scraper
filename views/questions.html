@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INFOMBIN</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="page-header">
+      <h1>Web scraper <small>Student team 1</small></h1>
+    </div>
+    <p>Please answer the following questions.</p>
+    <form action="/answers" method="post">
+      <input id="username" name="username" type="hidden" value="<%= username %>"/>
+      <div class="form-group">
+        <label for="profile">Profile</label>
+        <select class="form-control" id="profile" name="profile">
+          <option>Business Consultant</option>
+          <option>Technical Consultant</option>
+          <option>Entrepreneur</option>
+          <option>Researcher</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="interest">Interests</label>
+        <textarea class="form-control" id="interest" name="interest" rows="3" aria-describedby="helpBlock" placeholder="E.g. software architecture, data mining, programming, etc."></textarea>
+        <span id="helpBlock" class="help-block">Please separate your study interests with a comma.</span>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

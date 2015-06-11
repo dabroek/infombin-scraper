@@ -1,0 +1,19 @@
+{
+  "name": "infombin-scraper",
+  "version": "1.0.0",
+  "description": "Scraping tool for the BI course",
+  "main": "server.js",
+  "author": "M.G. Dabroek",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "cheerio": "^0.19.0",
+    "ejs": "^2.3.1",
+    "express": "^4.12.4",
+    "q": "^1.4.1",
+    "request": "^2.57.0",
+    "tough-cookie": "^1.2.0"
+  }
+}
